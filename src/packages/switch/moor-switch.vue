@@ -57,13 +57,16 @@ export default {
 <style lang="scss" scoped>
 .moor-switch {
   display: inline-block;
+
   > span, > div {
     float: left;
   }
+
   input {
     display: none;
   }
 }
+
 .switch-box {
   width: 40px;
   height: 20px;
@@ -76,9 +79,11 @@ export default {
   position: relative;
   cursor: pointer;
   margin-left: 6px;
+
   &.closed {
     background-color: rgb(255, 73, 73);
   }
+
   span {
     width: 16px;
     height: 16px;
@@ -88,9 +93,12 @@ export default {
     position: absolute;
     left: 22px;
     transition: 200ms;
+
     &.closed {
       left: 2px;
     }
   }
 }
 </style>
+
+

@@ -1,6 +1,6 @@
-# test-ui
+# moor-ui
 
-> test ui
+> An ui project base on Vue.js 
 
 ## Build Setup
 

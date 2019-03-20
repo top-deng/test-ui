@@ -1,24 +1,33 @@
-import Switch form '.packages/switch/index.js';
+import HelloWorld from './packages/hello-world/index.js';
+import MoorButton from './packages/button/index.js';
+import MoorSelect from './packages/select/index.js';
+import MoorInput from './packages/input/index.js';
+import MoorSwitch from './packages/switch/index.js';
 
 const components = [
-	Switch,
+  HelloWorld,
+  MoorButton,
+  MoorSelect,
+  MoorInput,
+  MoorSwitch
 ]
 
 const install = function(Vue, opts = {}) {
-	components.forEach(component => {
-		Vue.component(component.name, component)
-	})
-};
+  components.map(component => {
+    Vue.component(component.name, component);
+  })
+}
 
-/* istanbul ignore if */
+/* 支持使用标签的方式引入 */
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-module.exports = {
-  version: '1.0.0',
+export default {
   install,
-  Switch,
-};
-
-module.exports.default = module.exports;
+  HelloWorld,
+  MoorButton,
+  MoorSelect,
+  MoorInput,
+  MoorSwitch
+}
