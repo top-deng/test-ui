@@ -2,7 +2,8 @@
   "name": "test-ui",
   "description": "test ui",
   "version": "1.0.0",
-  "author": "david.deng",
+  "repository": "git@github.com:top-deng/test-ui.git",
+  "author": "david.deng <dengfd88@163.com>",
   "license": "MIT",
   "main": "dist/test-ui.js",
   "private": false,
@@ -31,6 +32,6 @@
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": ">=3.1.11"
   }
 }
