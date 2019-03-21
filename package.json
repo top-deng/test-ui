@@ -1,7 +1,7 @@
 {
   "name": "top-test-ui",
   "description": "An ui project base on Vue.js ",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "david.deng <dengfd88@163.com>",
   "license": "MIT",
   "main": "dist/top-test-ui.js",
